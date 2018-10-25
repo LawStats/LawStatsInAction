@@ -1,0 +1,1 @@
+SELECT COUNT(DecisionCurrent.StudyTag) FROM DecisionCurrent WHERE StudyTag = 'simple_01_001' AND (DecisionCurrent.DecisionOLG NOTNULL OR DecisionCurrent.DecisionLG NOTNULL OR DecisionCurrent.DecisionAG NOTNULL)
