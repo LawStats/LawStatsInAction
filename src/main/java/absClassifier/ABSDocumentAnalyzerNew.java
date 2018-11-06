@@ -2,6 +2,7 @@ package absClassifier;
 
 
 import model.Decision;
+import preprocessing.Formatting.Formatter;
 import uhh_lt.ABSA.ABSentiment.AbSentiment;
 import uhh_lt.ABSA.ABSentiment.type.Result;
 import utils.DecisionUtil;
@@ -72,6 +73,7 @@ public class ABSDocumentAnalyzerNew {
         }
 
         decisionSentence = DecisionUtil.getStringAfterColon(decisionSentence);
+        //decisionSentence = Formatter.replaceAllNewLines(decisionSentence);
 
         result = _abSentiment.analyzeText(decisionSentence);
 

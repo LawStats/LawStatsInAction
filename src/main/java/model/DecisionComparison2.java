@@ -75,4 +75,20 @@ public class DecisionComparison2 {
     public void setFalseNegatives(int falseNegatives) {
         this.falseNegatives = falseNegatives;
     }
+
+    public int getComparisonValue(){
+        int value = -2;
+
+        if(truePositives != 0){
+            value = 0;
+        }else if(trueNegatives != 0){
+            value = 1;
+        }else if(falsePositives != 0){
+            value = 2;
+        }else if(falseNegatives != 0){
+            value = 3;
+        }
+
+        return value;
+    }
 }

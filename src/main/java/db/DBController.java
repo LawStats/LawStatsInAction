@@ -77,7 +77,7 @@ public class DBController {
 
                 addDecisionInfoToPS(ps, decision);
                 ps.setString(17, decision.getStudyTag());
-                ps.setDouble(18, decision.getDecisionComparison2().getFalsePositives());
+               // ps.setDouble(18, decision.getDecisionComparison2().getFalsePositives());
                 ps.addBatch();
             }
 

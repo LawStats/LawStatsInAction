@@ -2,6 +2,7 @@ package absClassifier;
 
 import db.DBController;
 import model.Decision;
+import model.StudyTag;
 import uhh_lt.ABSA.ABSentiment.AbSentiment;
 import uhh_lt.ABSA.ABSentiment.type.Result;
 import utils.PropertyManager;
@@ -36,6 +37,7 @@ public class OutcomeAnalyzer {
         for (Decision decision : allDecisionsList) {
 
             determineRevisionOutcome(decision);
+            decision.setStudyTag(StudyTag.MODEL);
             temporaryDecisions.add(decision);
 
 

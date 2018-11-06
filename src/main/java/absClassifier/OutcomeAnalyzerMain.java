@@ -12,11 +12,11 @@ public class OutcomeAnalyzerMain {
         DBController dbc = DBController.getInstance();
         dbc.initDBConnection();
         Map<String, Decision> allDecisionsMap = dbc.getDecisionCurrentEntries();
-        try{
-            dbc.getConnection().close();
-        }catch(SQLException sqlE){
-            sqlE.printStackTrace();
-        }
+//        try{
+//            dbc.getConnection().close();
+//        }catch(SQLException sqlE){
+//            sqlE.printStackTrace();
+//        }
         OutcomeAnalyzer outcomeAnalyzer = new OutcomeAnalyzer();
         outcomeAnalyzer.determineOutcomeForMultiple(allDecisionsMap);
     }

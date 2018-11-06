@@ -33,6 +33,21 @@ public class FileUtil {
         }
     }
 
+    public static void writeLineToFile(String line, String filename){
+        try {
+            FileOutputStream fos = new FileOutputStream(filename, true);
+
+
+                IOUtils.write(line, fos, "UTF-8");
+
+            fos.flush();
+            fos.close();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
 
     public static String getStringFromFile(File file){
         String fileString = null;
