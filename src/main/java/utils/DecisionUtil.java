@@ -74,7 +74,7 @@ public class DecisionUtil {
 
     public static void determineAndSetCourt(Decision decision, String court) {
 
-        boolean isOLG = court.startsWith("OLG");
+        boolean isOLG = court.startsWith("OLG") || court.equals("Kammergericht");
         boolean isLG = court.startsWith("LG");
         boolean isAG = court.startsWith("AG");
 
