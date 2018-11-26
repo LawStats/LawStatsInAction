@@ -1,0 +1,25 @@
+LawStats iA plan Sprint 1:
+Datenbank
+	-tabelle mit decision ID und text (text tabelle)
+	-tabelle mit decision ID und annotierten entitäten (golden standard) (goldenstandard tabelle)
+	-ist-stand tabelle (mit aktuellem machine learning extraktion)
+	-evtl. tabelle mit produzierten entitäten
+Vergleichsmechanismus
+	-muss daten aus tabelle golden standard holen und mit produzierten entitäten vergleichen
+	-muss mit ist stand vergleichen
+
+Erstellen neuer entitäten:
+	-muss text aus tabelle text tabelle holen
+	-muss die entitäten extraktion anwenden
+	-muss extrahierte entitäten vergleichen (vergleichsmechanismus)
+	-muss ergebniss irgendwie sinnvoll speichern, archivieren und aufbereiten
+
+
+Benütigte funktionen:
+	-text tabelle initial füllen
+	-golden standard tabelle initial füllen
+	-ist stand tabelle initial füllen
+	-neue enitäten extraktion anwenden
+	-
+	-ergebnisse vergleichen
+	-ergebnisse aufbereiten
